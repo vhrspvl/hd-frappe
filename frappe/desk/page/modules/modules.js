@@ -59,12 +59,12 @@ frappe.pages['modules'].on_page_load = function(wrapper) {
 	});
 
 	// notifications click
-	page.main.on("click", '.open-notification', function() {
-		var doctype = $(this).attr('data-doctype');
-		if(doctype) {
-			frappe.ui.notifications.show_open_count_list(doctype);
-		}
-	});
+	// page.main.on("click", '.open-notification', function() {
+	// 	var doctype = $(this).attr('data-doctype');
+	// 	if(doctype) {
+	// 		frappe.ui.notifications.show_open_count_list(doctype);
+	// 	}
+	// });
 
 	page.activate_link = function(link) {
 		page.last_link = link;
@@ -109,7 +109,7 @@ frappe.pages['modules'].on_page_load = function(wrapper) {
 		// }
 
 		//setup_section_toggle();
-		frappe.app.update_notification_count_in_modules();
+		// frappe.app.update_notification_count_in_modules();
 	};
 
 	var process_data = function(module_name, data) {

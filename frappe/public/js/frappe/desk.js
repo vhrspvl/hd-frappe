@@ -65,7 +65,7 @@ frappe.Application = Class.extend({
 		// trigger app startup
 		$(document).trigger('startup');
 
-		this.start_notification_updates();
+		// this.start_notification_updates();
 
 		$(document).trigger('app_ready');
 
